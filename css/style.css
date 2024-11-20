@@ -121,6 +121,10 @@ nav a:hover{
     border-radius: 5px;
 }
 
+.secao2 a{
+    color: white;
+}
+
 .secao2 h3{
     text-transform: uppercase;
     letter-spacing: 2px;
