@@ -1,0 +1,266 @@
+/* Menu de Navegação */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1C1C1C;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav .logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+nav a{
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    opacity: 0.7;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Seção 1 */
+.secao1{
+    background-image: url(../img/11-barbearias-em-goiania-com-estilo-vintage-que-voce-precisa-conhecer.jpeg);
+    height: 675px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.secao1 .introducao p{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.secao1 .fale-conosco a{
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.background{
+    background-color: #1C1C1C;
+    padding:  10px 10px 0px 10px;
+}
+
+.secao2{
+    display: flex;
+    height: 240px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #d32737;
+    border-radius: 5px;
+}
+
+.secao2 h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.secao2 .sobre{
+    width: 300px;
+}
+
+.secao2 .sobre hr{
+    margin-top: 20px;
+}
+
+.secao2 .sobre p{
+    margin-top: 20px;
+}
+
+.secao2 .imagens-sobre img{
+    height: 172px;
+    width: 172px;
+}
+
+.secao2 .horarios{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.secao2  hr{
+    border: 1px solid #d32737;
+}
+
+.secao2 .horarios .dias hr, ul{
+    margin-top: 10px;
+}
+
+.secao2 .horarios .horas{
+    display: flex;
+    align-items: flex-end;
+}
+
+.secao2 .ondeencontrar{
+    width: 300px;
+}
+
+.secao2 .ondeencontrar hr{
+    margin-top: 20px;
+}
+
+.secao2 .ondeencontrar .primeiro{
+    margin-top: 20px;
+}
+
+.secao2 .ondeencontrar .agendar{
+    margin-top: 10px;
+    text-transform: uppercase;
+    border: 1px solid red;
+    text-align: center;
+    padding: 5px;
+}
+
+.secao2 .ondeencontrar .outros{
+    margin-top: 10px;
+}
+
+.secao2 .ondeencontrar .redes-sociais{
+    margin-top: 10px;
+}
+
+.secao2 .ondeencontrar .redes-sociais i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.secao3{
+    justify-items: center;
+    height: 300px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #d32737;
+    border-radius: 5px;
+}
+
+.secao3 h3{
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.secao3  hr{
+    border: 1px solid #d32737;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.secao3 .servicos{
+    display: flex;
+    margin: 35px;
+    gap: 100px;
+    text-align: center;
+}
+
+.secao3 .servicos .servico{
+    width: 400px;
+    justify-items: center;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.secao3 .servicos .servico .itens{
+    align-content: center;
+}
+
+.secao3 .servicos .servico .itens .pd{
+    margin-top: 15px;
+}
+
+.secao3 .servicos .servico img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    height: 300px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #d32737;
+    border-radius: 5px;
+}
+
+footer img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
