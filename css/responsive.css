@@ -52,7 +52,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        max-height: 830px;
+        height: 830px;
     }
 }
 
