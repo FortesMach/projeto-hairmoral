@@ -45,7 +45,7 @@
     }
 
     .secao3{
-        height: 720px;
+        height: 550px;
     }
 
     .secao2 {
@@ -64,7 +64,7 @@
 
 @media (max-width: 500px){
     .secao3{
-        height: 640px;
+        height: 460px;
     }
 
     .secao3 .servicos .servico img{
